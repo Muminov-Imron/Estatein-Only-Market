@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  //   font-family: "Urbanist", sans-serif;
+  background-color: #141414;
   margin: 0;
 }
 
@@ -103,6 +103,7 @@ header {
   border-radius: 10px;
   background-color: #141414;
   border: 1px solid #262626;
+  cursor: pointer;
 }
 
 .hamburger-btn {
@@ -175,7 +176,130 @@ header {
   border: 1px solid #262626;
 }
 
-@media only screen and (min-width: 1440px) {
+// sect one page
+
+.sect-one {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sect-one-img {
+  width: 358px;
+  height: 302px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.sect-one-sub-img {
+  position: absolute;
+  top: 338px;
+  width: 117px;
+  height: 117px;
+}
+
+.sect-one-text-box {
+  padding-top: 56px;
+}
+
+.sect-one-title {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin: 0;
+  color: #ffffff;
+}
+
+.sect-one-text {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  color: #999999;
+}
+
+.sect-one-btn {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  border: 1px solid #262626;
+  background-color: transparent;
+  padding: 14px 137px;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sect-one-btn-two {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
+  background-color: #703bf7;
+  padding: 14px 119px;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.stat-card {
+  padding: 16px;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.stat-card h3 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.stat-card p {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #999999;
+  margin: 0;
+  margin-top: 2px;
+}
+
+@media only screen and (min-width: 1636px) {
   .navbar-logo {
     width: 160px;
     height: 48px;
@@ -191,5 +315,87 @@ header {
 
   .hamburger-btn {
     display: none;
+  }
+
+  //   sect one page
+
+  .wrapper-in-sect-one {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 80px;
+  }
+
+  .sect-one-img {
+    width: 850px;
+    height: 814px;
+  }
+
+  .sect-one-sub-img {
+    width: 175px;
+    height: 175px;
+    left: 690px;
+  }
+
+  .sect-one-title {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 120%;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .sect-one-text {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #999999;
+  }
+
+  .stats-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .stat-card {
+    width: 213px;
+  }
+
+  .stat-card h3 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+  }
+
+  .stat-card p {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #999999;
+    margin: 0;
+    text-align: left;
+  }
+
+  .sect-one-btn-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 60px;
+  }
+
+  .sect-one-btn {
+    padding: 18px 24px;
+  }
+
+  .sect-one-btn-two {
+    padding: 18px 24px;
+    margin: 0;
   }
 }
