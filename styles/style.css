@@ -56,6 +56,7 @@ header {
 .navbar-logo {
   width: 93.33px;
   height: 28px;
+  cursor: pointer;
 }
 
 .navbar-ul {
@@ -107,6 +108,19 @@ header {
   background-color: #141414;
   border: 1px solid #262626;
   cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.contact-btn:hover {
+  background-color: #1a1a1a;
+  border-color: #444;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-btn:active {
+  transform: translateY(0);
 }
 
 .hamburger-btn {
@@ -240,6 +254,19 @@ header {
   color: #ffffff;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.sect-one-btn:hover {
+  background-color: #1a1a1a;
+  border-color: #444;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sect-one-btn:active {
+  transform: translateY(0);
 }
 
 .sect-one-btn-two {
@@ -255,6 +282,18 @@ header {
   margin-top: 16px;
   margin-bottom: 40px;
   cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.sect-one-btn-two:hover {
+  background-color: #5e2edb; /* Biroz to'qroq rang */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(112, 59, 247, 0.3);
+}
+
+.sect-one-btn-two:active {
+  transform: translateY(0);
 }
 
 .stats-container {
