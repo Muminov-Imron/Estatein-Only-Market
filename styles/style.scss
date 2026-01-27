@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid #262626;
+  background-color: #1a1a1a;
+  padding-bottom: 32px;
+  padding-top: 22px;
+}
+
+.container {
+  max-width: 1636px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.box-in-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  width: 160px;
+  height: 48px;
+}
+
+.navbar-ul {
+  position: relative;
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-item {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 25px;
+  transition: color 0.3s ease;
+}
+
+.nav-bg {
+  position: absolute;
+  z-index: 1;
+  height: 54px;
+  background-color: #141414;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+
+  .nav-item.active {
+    color: #fff;
+  }
+}
+
+.contact-btn {
+  border: none;
+  padding: 12.5px 24px;
+  font-family: "Urbanist" sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #141414;
+  border: 1px solid #262626;
+}
