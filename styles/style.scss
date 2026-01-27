@@ -7,17 +7,33 @@ html {
 }
 
 body {
-  font-family: "Urbanist", sans-serif;
+  //   font-family: "Urbanist", sans-serif;
   margin: 0;
 }
 
-.navbar {
+.regular {
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
+}
+.semibold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.extra-bold {
+  font-weight: 800;
+}
+
+header {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 100;
   border-bottom: 1px solid #262626;
   background-color: #1a1a1a;
-  padding-bottom: 32px;
+  padding-bottom: 22px;
   padding-top: 22px;
 }
 
@@ -34,8 +50,8 @@ body {
 }
 
 .navbar-logo {
-  width: 160px;
-  height: 48px;
+  width: 93.33px;
+  height: 28px;
 }
 
 .navbar-ul {
@@ -44,6 +60,7 @@ body {
   padding-top: 10px;
   align-items: center;
   margin: 0;
+  display: none;
 }
 
 .nav-item {
@@ -52,13 +69,17 @@ body {
   position: relative;
   z-index: 2;
   color: #ffffff;
+  font-size: 18px;
+  line-height: 150%;
   text-decoration: none;
   padding: 12px 25px;
   transition: color 0.3s ease;
+  margin: 0;
 }
 
 .nav-bg {
   position: absolute;
+  bottom: -14px;
   z-index: 1;
   height: 54px;
   background-color: #141414;
@@ -72,16 +93,103 @@ body {
 }
 
 .contact-btn {
-  border: none;
+  display: none;
   padding: 12.5px 24px;
-  font-family: "Urbanist" sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 18px;
   line-height: 150%;
-  letter-spacing: 0%;
   color: #ffffff;
   border-radius: 10px;
   background-color: #141414;
   border: 1px solid #262626;
+}
+
+.hamburger-btn {
+  width: 28px;
+  height: 14px;
+  border: none;
+  background: #1a1a1a;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-btn span,
+.hamburger-btn span::before,
+.hamburger-btn span::after {
+  content: "";
+  display: block;
+  background: #ffffff;
+  height: 3px;
+  width: 28px;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.hamburger-btn span::before {
+  top: -8px;
+}
+.hamburger-btn span::after {
+  bottom: -8px;
+}
+
+.hamburger-btn.open span {
+  background: transparent;
+}
+.hamburger-btn.open span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.hamburger-btn.open span::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  height: 100%;
+  background: #1a1a1a;
+  transition: 0.4s;
+  padding-top: 80px;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 15px 25px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.sidebar nav a:hover {
+  border: 1px solid #262626;
+}
+
+@media only screen and (min-width: 1440px) {
+  .navbar-logo {
+    width: 160px;
+    height: 48px;
+  }
+
+  .navbar-ul {
+    display: inline;
+  }
+
+  .contact-btn {
+    display: inline;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
 }
