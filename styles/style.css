@@ -287,7 +287,7 @@ header {
 }
 
 .sect-one-btn-two:hover {
-  background-color: #5e2edb; /* Biroz to'qroq rang */
+  background-color: #5e2edb;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(112, 59, 247, 0.3);
 }
@@ -342,6 +342,106 @@ header {
   margin-top: 2px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .navbar-logo {
+    width: 113px;
+    height: 34px;
+  }
+  .navbar-ul {
+    display: inline;
+  }
+  .contact-btn {
+    display: inline;
+  }
+  .hamburger-btn {
+    display: none;
+  }
+  .wrapper-in-sect-one {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 60px;
+  }
+  .sect-one-img {
+    width: 690px;
+    height: 622px;
+  }
+  .sect-one-sub-img {
+    width: 129px;
+    height: 129px;
+    left: 665px;
+    top: 270px;
+  }
+  .sect-one-title {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 120%;
+    color: #ffffff;
+    margin: 0;
+  }
+  .sect-one-text {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999999;
+    margin-bottom: 50px;
+  }
+  .stats-container {
+    display: flex;
+    gap: 16px;
+  }
+  .stat-card {
+    width: 192px;
+    padding: 14px;
+  }
+  .stat-card h3 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+  }
+  .stat-card p {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999999;
+    margin: 0;
+    text-align: left;
+  }
+  .sect-one-btn-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 50px;
+  }
+  .sect-one-btn {
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+  .sect-one-btn-two {
+    padding: 14px 20px;
+    font-size: 14px;
+    margin: 0;
+  }
+  .nav-item {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+  .nav-bg {
+    top: -5px;
+    height: 51px;
+  }
+  .contact-btn {
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+}
 @media only screen and (min-width: 1636px) {
   .navbar-logo {
     width: 160px;
