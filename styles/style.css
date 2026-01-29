@@ -116,7 +116,7 @@ header {
   background-color: #1a1a1a;
   border-color: #444;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3019607843);
 }
 
 .contact-btn:active {
@@ -178,6 +178,7 @@ header {
   background: #1a1a1a;
   transition: 0.4s;
   padding-top: 80px;
+  border-left: 2px solid #262626;
 }
 
 .sidebar.active {
@@ -198,7 +199,7 @@ header {
 
 .sect-one {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 61px;
 }
 
 .sect-one-img {
@@ -262,7 +263,7 @@ header {
   background-color: #1a1a1a;
   border-color: #444;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3019607843);
 }
 
 .sect-one-btn:active {
@@ -289,7 +290,7 @@ header {
 .sect-one-btn-two:hover {
   background-color: #5e2edb;
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(112, 59, 247, 0.3);
+  box-shadow: 0 8px 20px rgba(112, 59, 247, 0.3019607843);
 }
 
 .sect-one-btn-two:active {
@@ -306,13 +307,25 @@ header {
   padding: 16px;
   background-color: #1a1a1a;
   border: 1px solid #262626;
-  transition: transform 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .stat-card:hover {
-  transform: translateY(-5px);
+  background-color: #222222;
+  border-color: #4d4d4d;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+}
+
+.stat-card:active {
+  transform: scale(0.96);
+  background-color: #141414;
+  transition: all 0.1s;
 }
 
 .full-width {
@@ -340,6 +353,68 @@ header {
   color: #999999;
   margin: 0;
   margin-top: 2px;
+}
+
+.sect-one-magic-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 358px;
+  margin-top: 40px;
+  border: 1px solid #262626;
+  box-shadow: 0px 0px 0px 4px #191919;
+  background-color: #141414;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.sect-one-magic-card {
+  width: 163px;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  padding: 19px 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.sect-one-magic-card:hover {
+  background-color: #1a1a1a;
+  border-color: #a78bfa;
+  box-shadow: 0 0 15px rgba(167, 139, 250, 0.4);
+  transform: translateY(-5px);
+}
+
+.sect-one-magic-card:active {
+  transform: scale(0.97);
+  background-color: #111;
+}
+
+.sect-one-magic-strel {
+  position: absolute;
+  left: 118px;
+  top: 16px;
+  width: 26px;
+  height: 26px;
+}
+
+.sect-one-magic-img {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.sect-one-magic-name {
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -441,6 +516,27 @@ header {
     padding: 14px 20px;
     font-size: 14px;
   }
+  .sect-one-magic-cards-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+  .sect-one-magic-card {
+    width: 337px;
+  }
+  .sect-one-magic-img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+  }
+  .sect-one-magic-name {
+    font-size: 16px;
+  }
+  .sect-one-magic-strel {
+    width: 26px;
+    height: 26px;
+    left: 295px;
+  }
 }
 @media only screen and (min-width: 1636px) {
   .navbar-logo {
@@ -460,7 +556,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    gap: 80px;
+    gap: 68px;
   }
   .sect-one-img {
     width: 850px;
@@ -523,5 +619,39 @@ header {
   .sect-one-btn-two {
     padding: 18px 24px;
     margin: 0;
+  }
+  .sect-one-btn {
+    padding: 18px 24px;
+    font-size: 18px;
+  }
+  .sect-one-btn-two {
+    padding: 18px 24px;
+    font-size: 18px;
+  }
+  .sect-one-magic-cards-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .sect-one-magic-card {
+    width: 373px;
+    height: 212px;
+    padding: 40px 20px;
+  }
+  .sect-one-magic-img {
+    width: 82px;
+    height: 82px;
+    margin-bottom: 16px;
+  }
+  .sect-one-magic-name {
+    font-size: 20px;
+  }
+  .sect-one-magic-strel {
+    width: 34px;
+    height: 34px;
+    left: 325px;
+    top: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
