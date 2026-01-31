@@ -105,7 +105,7 @@ header {
   background-color: #141414;
   border: 1px solid #262626;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -251,7 +251,7 @@ header {
   color: #ffffff;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -279,7 +279,7 @@ header {
   margin-top: 16px;
   margin-bottom: 40px;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -713,7 +713,7 @@ header {
   width: 358px;
   display: flex;
   align-items: center;
-  gap: 47px;
+  justify-content: space-between;
   margin-top: 30px;
   border-top: 1px solid #262626;
 }
@@ -729,8 +729,12 @@ header {
   background-color: #1a1a1a;
   border: 1px solid #262626;
   margin-top: 16px;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   cursor: pointer;
+}
+
+.bt {
+  display: none;
 }
 
 .bj {
@@ -908,6 +912,80 @@ header {
   line-height: 150%;
   color: #999999;
   margin: 0;
+}
+
+// Sect four page
+
+.sect-four {
+  padding-bottom: 80px;
+}
+
+.sect-four-card {
+  width: 358px;
+  background-color: #141414;
+  border: 1px solid #262626;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.sect-four-card-one {
+  display: none;
+}
+
+.sect-four-card-two {
+  display: none;
+}
+
+.sect-four-card-title {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.sect-four-card-text {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.6%;
+  color: #999999;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.sect-four-card-btn {
+  padding: 14px 112px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 131%;
+  letter-spacing: -0.6%;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  outline: none;
+}
+
+.sect-four-card-btn:hover {
+  background-color: #703bf7;
+  border-color: #703bf7;
+  box-shadow: 0 0 20px #703bf7;
+  transform: translateY(-2px);
+}
+
+.sect-four-card-btn:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 4px 10px #703bf733;
+  background-color: #4c1d95;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1213,6 +1291,63 @@ header {
 
   .pg {
     display: block;
+  }
+
+  // Sect four page
+
+  .sect-four-card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .sect-four-card {
+    width: 413.33px;
+    background-color: #141414;
+    border: 1px solid #262626;
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  .sect-four-card-one {
+    display: inline;
+  }
+
+  .sect-four-card-two {
+    display: inline;
+  }
+
+  .sect-four-card-title {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .sect-four-card-text {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.6%;
+    color: #999999;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .sect-four-card-btn {
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+
+  .ki {
+    display: block;
+    margin-top: 60px;
   }
 }
 
@@ -1535,6 +1670,7 @@ header {
   .page-number {
     display: flex;
     gap: 30px;
+    margin-top: 20px;
   }
 
   .page-one {
@@ -1621,5 +1757,64 @@ header {
 
   .pg {
     display: block;
+  }
+
+  // sect four page
+
+  .sect-four-card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .sect-four-card {
+    width: 512px;
+    background-color: #141414;
+    border: 1px solid #262626;
+    padding: 50px;
+    border-radius: 12px;
+  }
+
+  .sect-four-card-one {
+    display: inline;
+  }
+
+  .sect-four-card-two {
+    display: inline;
+  }
+
+  .sect-four-card-title {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .sect-four-card-text {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.6%;
+    color: #999999;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .sect-four-card-btn {
+    padding: 18px 24px;
+    font-size: 18px;
+  }
+
+  .ki {
+    padding: 18px 24px;
+    font-size: 18px;
+    display: block;
+    margin-top: 64px;
   }
 }
